@@ -5,7 +5,17 @@
 // triangle(1) ➞ 1
 // triangle(6) ➞ 21
 // triangle(215) ➞ 23220
+int triangle(int x) {
+  int result = 0;
+  for (int i = 0; i <= x; i++) {
+    result += i;
+  }
+  print(result);
+  return result;
+}
 
 void main() {
-
+  triangle(1);
+  triangle(6);
+  triangle(215);
 }
